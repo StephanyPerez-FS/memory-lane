@@ -1,10 +1,11 @@
 import React from "react"
 import Navbar from "./Navbar"
+import "../styles/global.css"
 
 const Layout = ({ children }) => (
-  <div>
+  <div style={{ fontFamily: "Arial, sans-serif" }}>
     <Navbar />
-    <main>{children}</main>
+    <main style={{ margin: "20px" }}>{children}</main>
   </div>
 )
 
