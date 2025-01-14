@@ -12,7 +12,7 @@ module.exports = {
     title: `Memory Lane`,
     description: `A blog to document my learning journey.`,
     author: `Stephany Perez`,
-    siteUrl: `https://StephanyPerez-FS.github.io/memory-lane/`, // Fixed URL
+    siteUrl: `https://StephanyPerez-FS.github.io/memory-lane/`,
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -26,7 +26,7 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-mdx`, // Optional: Add support for MDX files
+      resolve: `gatsby-plugin-mdx`,
       options: {
         extensions: [`.mdx`, `.md`],
       },
@@ -34,8 +34,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Memory Lane Blog`, // Updated name to match your site
-        short_name: `Memory Lane`, // Updated short_name
+        name: `Memory Lane Blog`,
+        short_name: `Memory Lane`,
         start_url: `/`,
         background_color: `#ffffff`, // Set to a neutral background
         theme_color: `#663399`, // Purple theme color
