@@ -7,9 +7,22 @@ const PostTemplate = ({ data }) => {
 
   return (
     <Layout>
-      <h1>{frontmatter.title}</h1>
-      <p>{frontmatter.date}</p>
-      <div dangerouslySetInnerHTML={{ __html: body }} />
+      <article>
+        <h1>{frontmatter.title}</h1>
+        <p>{frontmatter.date}</p>
+        {frontmatter.image && (
+          <img
+            src={frontmatter.image}
+            alt={frontmatter.title}
+            style={{
+              width: "100%",
+              margin: "20px 0",
+              borderRadius: "8px",
+            }}
+          />
+        )}
+        <div dangerouslySetInnerHTML={{ __html: body }} />
+      </article>
     </Layout>
   )
 }
@@ -20,6 +33,7 @@ export const query = graphql`
       frontmatter {
         title
         date
+        image
       }
       body
     }

@@ -67,3 +67,13 @@ exports.createPages = async ({ actions, graphql }) => {
     defer: true,
   })
 }
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions
+  createTypes(`
+    type MdxFrontmatter {
+      title: String
+      date: Date @dateformat
+      image: String
+    }
+  `)
+}
