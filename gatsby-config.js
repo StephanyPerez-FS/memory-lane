@@ -9,6 +9,7 @@
  */
 module.exports = {
   siteMetadata: {
+    pathPrefix: "/memory-lane",
     title: `Memory Lane`,
     description: `A blog to document my learning journey.`,
     author: `Stephany Perez`,
