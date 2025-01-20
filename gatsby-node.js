@@ -59,20 +59,11 @@ exports.createPages = async ({ actions, graphql }) => {
     })
   })
 
+  // Example for deferred static generation (DSG)
   createPage({
     path: "/using-dsg",
     component: require.resolve("./src/templates/using-dsg.js"),
     context: {},
     defer: true,
   })
-}
-exports.createSchemaCustomization = ({ actions }) => {
-  const { createTypes } = actions
-  createTypes(`
-    type MdxFrontmatter {
-      title: String
-      date: Date @dateformat
-      image: String
-    }
-  `)
 }
