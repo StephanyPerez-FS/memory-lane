@@ -1,20 +1,10 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/
- */
-
-/**
- * @type {import('gatsby').GatsbyConfig}
- */
 module.exports = {
   siteMetadata: {
     title: `Memory Lane`,
     description: `A blog to document my learning journey.`,
     author: `Stephany Perez`,
-    siteUrl: `https://StephanyPerez-FS.github.io/memory-lane/`,
+    siteUrl: `https://StephanyPerez-FS.github.io/`, // No /memory-lane/ in the URL
   },
-  pathPrefix: `/memory-lane`,
   plugins: [
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
@@ -37,11 +27,11 @@ module.exports = {
       options: {
         name: `Memory Lane Blog`,
         short_name: `Memory Lane`,
-        start_url: `/memory-lane/`, // Adjust this to match your pathPrefix
-        background_color: `#ffffff`, // Set to a neutral background
-        theme_color: `#663399`, // Purple theme color
+        start_url: `/`,
+        background_color: `#ffffff`,
+        theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // Ensure the icon file exists
+        icon: `src/images/gatsby-icon.png`,
       },
     },
   ],
