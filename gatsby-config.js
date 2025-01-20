@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: "/memory-lane", // Your GitHub Pages repo name
+  pathPrefix: "/memory-lane",
   siteMetadata: {
     title: `Memory Lane`,
     description: `A blog to document my learning journey.`,
@@ -28,7 +28,7 @@ module.exports = {
       options: {
         name: `Memory Lane Blog`,
         short_name: `Memory Lane`,
-        start_url: `/`,
+        start_url: `/memory-lane/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
