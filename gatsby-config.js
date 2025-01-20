@@ -1,4 +1,4 @@
-/**
+/*/*
  * Configure your Gatsby site with this file.
  *
  * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/
@@ -8,7 +8,6 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
-  pathPrefix: "/memory-lane",
   siteMetadata: {
     title: `Memory Lane`,
     description: `A blog to document my learning journey.`,
@@ -38,10 +37,10 @@ module.exports = {
         name: `Memory Lane Blog`,
         short_name: `Memory Lane`,
         start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#663399`,
+        background_color: `#ffffff`, // Set to a neutral background
+        theme_color: `#663399`, // Purple theme color
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`,
+        icon: `src/images/gatsby-icon.png`, // Ensure the icon file exists
       },
     },
   ],
