@@ -14,6 +14,7 @@ module.exports = {
     author: `Stephany Perez`,
     siteUrl: `https://StephanyPerez-FS.github.io/memory-lane/`,
   },
+  pathPrefix: `/memory-lane`,
   plugins: [
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
@@ -36,7 +37,7 @@ module.exports = {
       options: {
         name: `Memory Lane Blog`,
         short_name: `Memory Lane`,
-        start_url: `/`,
+        start_url: `/memory-lane/`, // Adjust this to match your pathPrefix
         background_color: `#ffffff`, // Set to a neutral background
         theme_color: `#663399`, // Purple theme color
         display: `minimal-ui`,
