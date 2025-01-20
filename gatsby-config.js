@@ -1,9 +1,10 @@
 module.exports = {
+  pathPrefix: "/memory-lane", // Your GitHub Pages repo name
   siteMetadata: {
     title: `Memory Lane`,
     description: `A blog to document my learning journey.`,
     author: `Stephany Perez`,
-    siteUrl: `https://StephanyPerez-FS.github.io/`, // No /memory-lane/ in the URL
+    siteUrl: `https://StephanyPerez-FS.github.io/memory-lane/`,
   },
   plugins: [
     `gatsby-plugin-image`,

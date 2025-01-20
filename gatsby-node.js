@@ -59,7 +59,6 @@ exports.createPages = async ({ actions, graphql }) => {
     })
   })
 
-  // Example for deferred static generation (DSG)
   createPage({
     path: "/using-dsg",
     component: require.resolve("./src/templates/using-dsg.js"),
